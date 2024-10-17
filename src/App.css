@@ -1,0 +1,151 @@
+button {
+  border: none;
+}
+
+.App {
+  text-align: center;
+}
+
+.container {
+  background-color: #8d8d8d;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.todos {
+  background-color: rgb(255, 255, 255);
+  width: 1300px;
+  height: 400px;
+  overflow-y: scroll;
+  border-radius: 10px;
+}
+
+.header {
+  background-color: #000291;
+  width: 508px;
+  height: 60px;
+  box-shadow: 0px 0px 21px -7px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 10px;
+}
+.newTaskButton {
+  border: none;
+  background-color: #000291;
+  width: 160px;
+  height: 50px;
+  border-radius: 24px;
+  margin-top: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.inputName {
+  margin-top: 10px;
+  text-align: center;
+  border: none;
+  height: 50px;
+  width: 200px;
+  box-shadow: 0px 0px 21px -7px rgba(0, 0, 0, 0.3);
+}
+input:focus {
+  outline: none;
+}
+.error-message {
+  color: red; /* Cor do texto de erro */
+  margin-top: 10px; /* Espaçamento acima */
+  font-weight: bold; /* Negrito para destacar a mensagem */
+}
+/* Estilo para todos os cabeçalhos de tabela */
+th {
+  background-color: #000291; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  padding: 10px; /* Espaçamento interno */
+  font-weight: bold; /* Negrito */
+  text-align: center; /* Alinhamento do texto */
+  border-bottom: 2px solid #64697b; /* Borda inferior */
+}
+
+/* Estilo para o cabeçalho da tabela */
+.todo-table {
+  width: 100%; /* Largura da tabela */
+  border-collapse: collapse; /* Colapsa bordas */
+}
+.inputDescription {
+  margin-top: 10px;
+  text-align: center;
+  border: none;
+  height: 50px;
+  width: 200px;
+  box-shadow: 0px 0px 21px -7px rgba(0, 0, 0, 0.3);
+}
+
+.inputDueDate{
+  margin-top: 10px;
+  text-align: center;
+  border: none;
+  height: 50px;
+  width: 200px;
+  box-shadow: 0px 0px 21px -7px rgba(0, 0, 0, 0.3);
+}
+/* Estilo da barra de filtros */
+.filters {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 10px; /* Espaçamento entre os botões */
+}
+
+/* Estilo dos botões de filtro */
+.filters button {
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilo ao passar o mouse */
+.filters button:hover {
+  background-color: #000291;
+  color: white;
+  border-color: #000291;
+}
+
+/* Estilo quando o botão é ativo/selecionado */
+.filters button.active {
+  background-color: #000291;
+  color: white;
+  border-color: #000291;
+}
+
+/* Estilo de foco ao clicar */
+.filters button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #000291;
+}
+.status-dropdown {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #000291;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  font-weight: bold;
+}
+
+/* Alterar a cor da borda quando o dropdown está focado */
+.status-dropdown:focus {
+  border-color: #000291;
+}
